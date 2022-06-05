@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+
+    <link rel="stylesheet" href="./styles/main.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="player">
+        <div class="dashboard">
+            <header>
+                <h4>NOW PLAYING</h4>
+                <h2>US-UK 2022</h2>
+            </header>
+
+            <div class="cd">
+                <div class="cd-thumb" style="background-image: url('https://photo-resize-zmp3.zadn.vn/w320_r1x1_webp/cover/9/5/3/d/953d86a4e0f8d36a3560c69a528b80a1.jpg')"></div>
+            </div>
+
+            <div class="control">
+                <div class="btn btn-random">
+                    <i class="fa-solid fa-shuffle"></i>
+                </div>
+                <div class="btn btn-prev">
+                    <i class="fa-solid fa-backward-step"></i>
+                </div>
+                <div class="btn btn-toggle-play">
+                    <i class="fas fa-pause icon-pause"></i>
+                    <i class="fa-solid fa-play icon-play"></i>
+                </div>
+                <div class="btn btn-next">
+                    <i class="fa-solid fa-forward-step"></i>
+                </div>
+                <div class="btn btn-repeat">
+                    <i class="fa-solid fa-repeat"></i>
+                </div>
+            </div>
+
+            <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100" >
+            <audio id="audio" src=""></audio>
+        </div>
+
+        <div class="playlist">
+<!--            <div class="song">-->
+<!--                <div class="thumb" style="background-image: url('https://photo-resize-zmp3.zadn.vn/w320_r1x1_webp/cover/9/5/3/d/953d86a4e0f8d36a3560c69a528b80a1.jpg')">-->
+<!--                </div>-->
+
+<!--                <div class="body">-->
+<!--                    <h3 class="title">Save Your Tears</h3>-->
+<!--                    <p class="singer">The Weeknd</p>-->
+<!--                </div>-->
+
+<!--                <div class="like">-->
+<!--                    <i class="fa-solid fa-heart icon-full"></i>-->
+<!--                    <i class="fa-regular fa-heart"></i>-->
+<!--                    4.5k-->
+<!--                </div>-->
+<!--            </div>-->
+        </div>
+    </div>
+
+    <script src="./scripts/app.js"></script>
+
+
+</body>
+</html>
